@@ -86,7 +86,7 @@ class ValidacionController extends Controller
         }
     }
 
-    // ❌ Rechazar solicitud
+    // ❌ Rechazar solicitud con motivo
     public function rechazar(Request $request, $id)
     {
         $solicitud = ParticipanteOferta::findOrFail($id);
